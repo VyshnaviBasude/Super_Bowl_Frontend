@@ -28,7 +28,7 @@ export default{
   methods:{
     //promoises
     async fetchbooks(){
-      const res = await fetch('http://localhost:3666/superBowlWinners');
+      const res = await fetch('https://super-bowl-backend.onrender.com/api');
       const data = await res.json()
       console.log(data)
       return data
